@@ -1,5 +1,3 @@
-// stage1: clone source code 
-// this project run on gol label slave 
 node('gol') {
    stage('SCM') {
     git 'https://github.com/spring-projects/spring-petclinic.git'
