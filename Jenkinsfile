@@ -10,7 +10,7 @@ node('gol') {
    stage('publish junit Results'){
        junit 'spring-petclinic/target/surefire-reports/*.xml'
    }
-   stage(archive the artifact){
+   stage('archive the artifact'){
        archive 'spring-petclinic/target/spring-petclinic-2.3.1.BUILD-SNAPSHOT.jar'
    }
 }
